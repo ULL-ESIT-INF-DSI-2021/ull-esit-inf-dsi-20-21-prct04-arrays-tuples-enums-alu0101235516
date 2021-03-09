@@ -15,6 +15,9 @@
         "@typescript-eslint"
     ],
     "rules": {
-	    "quotes": "off"
+	    "quotes": "off",
+	    "valid-jsdoc": "off",
+        "require-jsdoc": "off",
+        "max-len": "off"
     }
 }
