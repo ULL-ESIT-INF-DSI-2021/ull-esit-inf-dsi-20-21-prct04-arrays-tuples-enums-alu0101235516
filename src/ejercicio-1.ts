@@ -9,8 +9,7 @@
  */
 // export es para que la funcion se use en otros ficheros
 
-export function add(num1: number, num2: number) {
-  return num1 + num2;
+export function decodeResistor(color: string[]): number {
+
 }
 
-console.log(add(1, 7));
