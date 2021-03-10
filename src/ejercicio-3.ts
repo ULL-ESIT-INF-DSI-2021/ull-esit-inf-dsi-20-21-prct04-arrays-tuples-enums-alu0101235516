@@ -1,15 +1,28 @@
 /**
- * Suma de dos numeros
- * @param num1 Primer numero
- * @param num2 Segundo numero
- * @return La suma
+ * Calculo de media y concatenación.
+ * @param str Array compuesto por números y letras.
+ * @return Devuelve un array con la media y la concatenacion de las letras.
  * ```ts
- * add(1,7) = 8
+ * meanAndConcatenate(['u', 6, 't', 2, 'r', 'e', 0, 'r', 2]) = [2.5, 'utrer'];
  * ```
  */
-// export es para que la funcion se use en otros ficheros
 
-export function meanAndConcatenate(str: string[]) {
-  let aux: string[] = "";
-  let aux2: string[] = "";
+export function meanAndConcatenate(str: (number | string)[]) {
+  let numCad: number = 0;
+  let letrCad: string = "";
+  let count: number = 0;
+  let output: [number, string];
+
+  str.forEach((item) => {
+    if (typeof item === "number") {
+      numCad += item;
+      count++;
+    } else {
+      letrCad += item;
+    }
+  });
+
+  numCad = numCad / count;
+  output = [numCad, letrCad];
+  return output;
 }
