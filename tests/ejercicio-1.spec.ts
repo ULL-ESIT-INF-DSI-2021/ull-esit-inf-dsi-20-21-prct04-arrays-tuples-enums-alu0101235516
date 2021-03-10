@@ -3,7 +3,7 @@ import {expect} from 'chai';
 import {decodeResistor} from '../src/ejercicio-1';
 
 
-describe('| VERIFICAR VALOR DE LAS RESISTENCIAS |', () => {
+describe('| EJ 1 - VERIFICAR VALOR DE LAS RESISTENCIAS |', () => {
   it('resistencia 1', () => {
     expect(decodeResistor(["Rojo", "Violeta"])).to.be.equal(9);
   });
