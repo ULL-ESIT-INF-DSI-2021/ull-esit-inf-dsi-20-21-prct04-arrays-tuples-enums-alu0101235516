@@ -11,7 +11,7 @@ export function meanAndConcatenate(str: (number | string)[]) {
   let numCad: number = 0;
   let letrCad: string = "";
   let count: number = 0;
-  let output: [number, string];
+  let output: [number, string] = [0, ""];
 
   str.forEach((item) => {
     if (typeof item === "number") {
