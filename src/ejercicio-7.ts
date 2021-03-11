@@ -1,5 +1,5 @@
 /**
- * Puntos bi-dimensionales.
+ * Puntos n-dimensionales.
  * @param PrimerPunto Primer punto de coordenadas.
  * @param SegundoPunto Segundo punto de coordenadas.
  * @param cons Constante por la que multiplicamos el punto de coordenadas en la funcion producto.
@@ -71,5 +71,3 @@ export function euclidea(PrimerPunto: Point, SegundoPunto: Point) {
     return "ERROR: Los puntos tienen que tener el mismo tamaño!";
   }
 }
-
-console.log(euclidea([4, 2, 5, 7], [1, 2, 3, 2]));
