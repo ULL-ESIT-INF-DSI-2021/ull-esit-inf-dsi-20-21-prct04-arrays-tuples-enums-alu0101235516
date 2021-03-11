@@ -1,5 +1,5 @@
 /**
- *Mover ceros al final.
+ * Mover ceros al final.
  * @param ZerosCad Array de entrada compuesto por números.
  * @return Devuelve un array con los ceros al final.
  * ```ts
@@ -23,5 +23,3 @@ export function moveZeros(ZerosCad: number[]) {
   }
   return NewCad;
 }
-
-console.log(moveZeros([1, 0, 1, 2, 0, 1, 3]));

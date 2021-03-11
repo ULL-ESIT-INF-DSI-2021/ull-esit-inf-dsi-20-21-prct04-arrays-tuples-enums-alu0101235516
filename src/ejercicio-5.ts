@@ -1,5 +1,5 @@
 /**
- *Mover ceros al final.
+ * Factoria de multiplicaciones.
  * @param factoria Array de entrada compuesto por números a multiplicar.
  * @return Devuelve un array con los numeros de la entrada multiplicados por el numero que hayamos asignado en "multiply".
  * ```ts
@@ -16,5 +16,3 @@ export function multiplyAll(factoria: number[]) {
     return output;
   };
 }
-
-console.log(multiplyAll([4, 2, 3])(2));
