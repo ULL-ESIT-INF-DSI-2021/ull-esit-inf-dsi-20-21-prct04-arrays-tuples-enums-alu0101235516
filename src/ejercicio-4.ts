@@ -1,7 +1,7 @@
 /**
  * Mover ceros al final.
  * @param ZerosCad Array de entrada compuesto por números.
- * @return Devuelve un array con los ceros al final.
+ * @return Devuelve un nuevo array con los ceros al final del mismo.
  * ```ts
  * moveZeros([1, 0, 1, 2, 0, 1, 3]) = [1, 1, 2, 1, 3, 0, 0];
  * ```

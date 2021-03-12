@@ -1,10 +1,9 @@
 /**
- * Suma de dos numeros
- * @param num1 Primer numero
- * @param num2 Segundo numero
+ * Decodificar resistencias
+ * @param resistor Colores que tiene la resistencia que vamos a decodificar
  * @return La suma
  * ```ts
- * add(1,7) = 8
+ * decodeResistor(["Rojo", "Violeta"] = 9
  * ```
  */
 // export es para que la funcion se use en otros ficheros

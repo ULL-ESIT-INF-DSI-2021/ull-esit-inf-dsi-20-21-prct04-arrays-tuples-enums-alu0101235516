@@ -1,5 +1,5 @@
 /**
- * Calculo de media y concatenación.
+ * Cálculo de media y concatenación.
  * @param str Array compuesto por números y letras.
  * @return Devuelve un array con la media y la concatenacion de las letras.
  * ```ts

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ejercicio-1 | ull-esit-inf-dsi-20-21-prct04-arrays-tuples-enums-alu0101235516</title>
+	<title>ejercicio-8 | ull-esit-inf-dsi-20-21-prct04-arrays-tuples-enums-alu0101235516</title>
 	<meta name="description" content="Documentation for ull-esit-inf-dsi-20-21-prct04-arrays-tuples-enums-alu0101235516">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">ull-esit-inf-dsi-20-21-prct04-arrays-tuples-enums-alu0101235516</a>
 				</li>
 				<li>
-					<a href="ejercicio_1.html">ejercicio-1</a>
+					<a href="ejercicio_8.html">ejercicio-8</a>
 				</li>
 			</ul>
-			<h1>Module ejercicio-1</h1>
+			<h1>Module ejercicio-8</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="ejercicio_1.html#decoderesistor" class="tsd-kind-icon">decode<wbr>Resistor</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="ejercicio_8.html#agent" class="tsd-kind-icon">agent</a></li>
 							</ul>
 						</section>
 					</div>
@@ -81,35 +81,53 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="decoderesistor" class="tsd-anchor"></a>
-					<h3>decode<wbr>Resistor</h3>
+					<a name="agent" class="tsd-anchor"></a>
+					<h3>agent</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">decode<wbr>Resistor<span class="tsd-signature-symbol">(</span>resistor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">agent<span class="tsd-signature-symbol">(</span>X<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, Y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, initialPoint<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, finalPoint<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;ERROR: La posición inicial o final no puede superar el tamaño del tablero&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct04-arrays-tuples-enums-alu0101235516/blob/15bdbf1/src/ejercicio-1.ts#L11">ejercicio-1.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct04-arrays-tuples-enums-alu0101235516/blob/15bdbf1/src/ejercicio-8.ts#L13">ejercicio-8.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Decodificar resistencias</p>
+									<p>El agente.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>resistor: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>X: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Colores que tiene la resistencia que vamos a decodificar</p>
+										<p>Tamaño en largo del tablero</p>
+									</div>
+								</li>
+								<li>
+									<h5>Y: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Tamaño en ancho del tablero</p>
+									</div>
+								</li>
+								<li>
+									<h5>initialPoint: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Coordenadas de la posicion inicial del agente.</p>
+									</div>
+								</li>
+								<li>
+									<h5>finalPoint: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Coordenadas de la posicion final del agente.</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>La suma</p>
-							<pre><code class="language-ts"><span style="color: #795E26">decodeResistor</span><span style="color: #000000">([</span><span style="color: #A31515">&quot;Rojo&quot;</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;Violeta&quot;</span><span style="color: #000000">] = </span><span style="color: #098658">9</span>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">&quot;ERROR: La posición inicial o final no puede superar el tamaño del tablero&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+							<p>Devuelve un array con las coordenadas que ha tenido que tomar para llegar al punto final.</p>
+							<pre><code class="language-ts"><span style="color: #795E26">agent</span><span style="color: #000000">(</span><span style="color: #098658">10</span><span style="color: #000000">, </span><span style="color: #098658">10</span><span style="color: #000000">, [</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">], [</span><span style="color: #098658">3</span><span style="color: #000000">, </span><span style="color: #098658">5</span><span style="color: #000000">]) = [</span><span style="color: #A31515">&#039;East&#039;</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;East&#039;</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;North&#039;</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;North&#039;</span><span style="color: #000000">];</span>
 </code></pre>
 						</li>
 					</ul>
@@ -122,7 +140,7 @@
 					<li class=" ">
 						<a href="../modules.html">Modules</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="ejercicio_1.html">ejercicio-<wbr>1</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -140,7 +158,7 @@
 					<li class=" tsd-kind-module">
 						<a href="ejercicio_7.html">ejercicio-<wbr>7</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="ejercicio_8.html">ejercicio-<wbr>8</a>
 					</li>
 				</ul>
@@ -148,7 +166,7 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="ejercicio_1.html#decoderesistor" class="tsd-kind-icon">decode<wbr>Resistor</a>
+						<a href="ejercicio_8.html#agent" class="tsd-kind-icon">agent</a>
 					</li>
 				</ul>
 			</nav>
