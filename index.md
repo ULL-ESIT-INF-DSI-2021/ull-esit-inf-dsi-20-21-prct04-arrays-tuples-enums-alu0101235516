@@ -494,6 +494,9 @@ describe('| EJ 8 - EL AGENTE |', () => {
 ```
 ### _**Test de todos los ejercicios.**_  
   
+  ![TEST](images/TESTS.PNG)
+  
+  
 ### Conclusiones.
 
   Para concluir, creo que la práctica ha estado divertida, y ha sido productiva, hemos tocado muchos puntos de TypeScript, descubierto muchas herramientas muy útiles, y desarrollado nuestra primera estructura de proyecto. En cuanto a los ejercicios creo que tengo que destacar la dificultad del ejercicio 2, que ha sido el que más me ha costado, pero también tenemos que destacar otras funciones muy divertidas como el ejercicio 4, 7, 8 y otras muy interesantes como el ejercicio 1 y 5. Creo que ha diferencia de la práctica anterior, el uso de tuplas, arrays, o enumerables facilita muchísimo la tarea de algunas funciones, y las simplifica mucho. Ahora me parece mejor programar en TypeScript o JavaScript que en C++, incluso en otras asignaturas como Seguridad de Sistemas, he estado haciendo las prácticas en JavaScript y mezclarlo con HTML y CSS para su visualización. De momento me esta gustando mucho la asignatura, y espero que siga yendo así.
