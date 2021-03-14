@@ -2,11 +2,12 @@
  * Palabras encadenadas en un array.
  * @param palStr Array con las palabras que vamos a concatenar.
  * @returns Devuelve el encadenamiento realizado.
- * ```TypeScript
+ * ```ts
  * meshArray([“allow”, “lowering”, “ringmaster”, “terror”]) -> "lowringter"
  * ```
  */
- export function meshArray(palStr: string[]) {
+
+export function meshArray(palStr: string[]) {
   let output: string = ``;
   for (let i: number = 0; i < palStr.length - 1; i++) {
     const palb: string = palStr[i];
