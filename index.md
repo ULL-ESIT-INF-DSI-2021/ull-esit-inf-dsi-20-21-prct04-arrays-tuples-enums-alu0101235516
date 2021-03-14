@@ -88,16 +88,57 @@ describe('| EJ 1 - VERIFICAR VALOR DE LAS RESISTENCIAS |', () => {
  ### Ejercicio 2 - Notación decimal y factorial.
 
   **Enunciado a realizar**
-  
+    
+   Escriba una función meshArray que compruebe si las cadenas del array están encadenadas o no. La función recibirá como parámetro un array de cadenas de texto y devolverá:
+
+   - “Error al encadenar” si las cadenas del array no están encadenadas.
+   - Una cadena de texto que contenga las letras que encadenan las palabras del array. A priori no sabe cuantas letras encadenadas tendrán en común, pero al menos será una.
+ 
   **La funcion para la realización de este ejercicio ha sido el siguiente:**
   
 ```TypeScript
-Código del 2.
+ export function meshArray(palStr: string[]) {
+  let output: string = ``;
+  for (let i: number = 0; i < palStr.length - 1; i++) {
+    const palb: string = palStr[i];
+    const nextPalb: string = palStr[i + 1];
+    let pos: number= palb.length - 1;
+    let posnextPalb: number = 0;
+    while (palb[pos] != nextPalb[posnextPalb]) {
+      pos--;
+      if (pos < 0) {
+        return `Error en el encadenamiento`;
+      }
+    }
+    for (let j: number = pos; j < palb.length; j++) {
+      if (palb[j] == nextPalb[posnextPalb]) {
+        output = output + palb[j];
+        posnextPalb++;
+      } else {
+        return `Error en el encadenamiento`;
+      }
+    }
+  }
+  return output;
+}
 ```
+   La función `meshArray` funciona de la siguiente manera, recibe como parámetro un array de tipo string. Primero realizaremos un bucle `for` para recorrer el array. La función tiene declarada las variables `palb` y `nextPalb` las cuales apuntan a la cadena actual con la siguiente.
+   Dentro de este bucle, tenemos un bucle `while` el cual nos sirve para recorrer el array del final al inicio viendo si coincidide con la primera letra de la siguiente palabra de la cadena, en el caso de no encontrar una coincidencia retornamos `Error en el encadenamiento`. 
+   Luego tendremos otro bucle `for` que ira desde la posicion en la que encontró dos letras iguales e iran avanzando y comprobando letra por letra, en el caso de que recorra hasta el final de la palabra las añade a un array de encontrar un error de coincidencia, retornará `Error en el encadenamiento`. 
+   Finalmente, si el todas las palabras se pueden encadenar retornará una cadena con todas las letras usadas a encadenar.
+   
   **Aqui tenemos el test del código:**
     
  ```TypeScript
-test
+import 'mocha';
+import {expect} from 'chai';
+import {meshArray} from '../src/ejercicio-2';
+
+describe('EJ 2 - PALABRAS ENCADENADAS EN UN ARRAY', () => {
+  it('Primer encadenado', () => {
+    expect(meshArray([`allow`, `lowering`, `ringmaster`, `terror`])).to.be.equal(`lowringter`);
+  });
+});
 ```
  
  
